@@ -1,0 +1,25 @@
+
+# Java build files
+build/
+*.class
+
+# Python cache
+__pycache__/
+*.pyc
+
+# LaTeX temporary files
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# IDE files
+.idea/
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
