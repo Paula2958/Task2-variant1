@@ -8,8 +8,8 @@ Big Data — Graph Exercises, Variant 1
 This project compares adjacency lists and packed-bit
 adjacency matrices in synthetic social networks.
 
-The goal is to study how graph size and density
-influence storage requirements and query efficiency.
+The goal is to look at how graph length and density
+have an impact on garage requirements and question performance.
 
 ## Experimental configuration
 
@@ -39,8 +39,8 @@ Implemented using primitive Java int[][] arrays.
 
 Memory complexity: O(V + E).
 
-Edge-existence queries require scanning the
-source vertex's neighbors.
+Edge-lifestyles queries require scanning the
+supply vertex's buddies.
 
 ### Packed adjacency matrices
 
@@ -52,18 +52,18 @@ Edge-existence queries use direct bit access.
 
 ## Benchmark methodology
 
-Each graph configuration uses:
+Each graph configuration makes use of:
 
 - 10,000 shared random queries
-- 2 warm-up passes
-- 5 recorded measurement trials
-- System.nanoTime() timing
+- 2 heat-up passes
+- five recorded dimension trials
+- System.NanoTime() timing
 - Median execution-time aggregation
 
-Correctness checks compare vertex degrees and
-2,000 sampled edge-existence queries.
+Correctness tests compare vertex levels and
+2,000 sampled facet-existence queries.
 
-Graph generation and representation construction
+Graph technology and representation construction
 are excluded from query timings.
 
 ## Requirements
@@ -107,14 +107,15 @@ docs/report.pdf
 
 ## Interpretation
 
-Adjacency lists avoid storing absent edges,
+Adjacency lists keep away from storing absent edges,
 making them attractive for sparse networks.
 
-Packed matrices support constant-time edge tests
-and may be space-competitive in dense networks.
+Packed matrices assist consistent-time area checks
+and may be space-aggressive in dense networks.
 
-The practical performance depends on graph
+The realistic performance depends on graph
 density, implementation, and query workload.
+
 
 ## Limitations
 
@@ -122,12 +123,12 @@ Memory values are analytical storage estimates,
 not direct measurements of retained heap memory.
 
 The timing benchmark is a lightweight Java
-microbenchmark rather than a JMH benchmark.
+microbenchmark in preference to a JMH benchmark.
 
-The generated graphs do not reproduce all
-structural properties of real social networks.
+The generated graphs do no longer reproduce all
+structural residences of actual social networks.
 
-Execution times may differ across machines.
+Execution instances may additionally vary throughout machines.
 
 ## References
 
